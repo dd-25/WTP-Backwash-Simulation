@@ -1,0 +1,203 @@
+/* General Styling */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Main Content Flex Container */
+.main-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Clock and Controls */
+.clock-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.time-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Start, Stop, and Reset Buttons */
+.control-button-container {
+    display: flex;
+    gap: 20px; /* Increased gap for better spacing */
+    justify-content: center;
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.control-button {
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #218838;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px; /* Set a fixed width for consistency */
+}
+
+.control-button:hover {
+    background-color: #218830;
+}
+
+.control-button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+
+/* Input Field and Go to Time Button */
+.time-input-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.time-input {
+    font-size: 1rem;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-go {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+.btn-go:hover {
+    background-color: #218838;
+}
+
+/* Valves */
+.valves {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.valve {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.valve.active {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+.valve.inactive {
+    background-color: #f44336;
+    transform: scale(1.05);
+}
+
+/* Status Boxes */
+.status-boxes {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.status-box {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.phase-box {
+    background-color: #ffeb3b;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Water Tank Styling */
+.water-tank-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.water-tank {
+    width: 120px;
+    height: 300px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Water Level Styling */
+.water-level {
+    width: 100%;
+    background-color: #0056b3;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Water Balance Styling */
+.water-balance {
+    position: absolute;
+    bottom: 10px;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 1000;
+    text-align: center;
+    width: 100%;
+    padding: 0 5px;
+}
